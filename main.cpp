@@ -13,6 +13,20 @@ int next_term = 0;
 
 int max_terms = 10;
 
+int fib(int n){
+    //inp: position of the fib sequence
+    //out: the number in sequence
+    if(n == 0)
+        return 0;
+    if(n == 1)
+        return 1;
+    else{
+        
+    }
+
+    return 0;
+}
+
 int main()
 {
 
