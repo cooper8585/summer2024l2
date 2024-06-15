@@ -37,10 +37,10 @@ int main()
         t_1 = t_2;
         t_2 = next_term;
     }
-    printif("\r\n");
+    printf("\r\n");
     printf("Fib series recursive");
     for(int i=0, i<maxterms; i++){
-        printif("%d, ", fib(i));
+        printf("%d, ", fib(i));
     }
     printf("\r\n");
 
