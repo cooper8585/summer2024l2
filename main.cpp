@@ -21,7 +21,7 @@ int fib(int n){
     if(n == 1)
         return 1;
     else{
-        
+        return(fib(n-1) + fib(n-2));
     }
 
     return 0;
@@ -30,7 +30,7 @@ int fib(int n){
 int main()
 {
 
-    printif("Fibonacci series: %d,%d,", t_1, t_2);
+    printf("Fibonacci series: %d,%d,", t_1, t_2);
     for( int i=0; i<max_terms; i++){
         next_term = t_1 + t_2;
         printif("%d, ", next_term);
@@ -38,8 +38,11 @@ int main()
         t_2 = next_term;
     }
     printif("\r\n");
-    printif("random words");
-
+    printf("Fib series recursive");
+    for(int i=0, i<maxterms; i++){
+        printif("%d, ", fib(i));
+    }
+    printf("\r\n");
 
     while (true) {
 
