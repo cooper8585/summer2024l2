@@ -17,11 +17,15 @@ int main()
 {
 
     printif("Fibonacci series: %d,%d,", t_1, t_2);
-    for( int i=10; i>5 ; i--){
-        printif("loop %d \r\n", i);
-
+    for( int i=0; i<maxterms; i++){
+        next_term = t_1 + t_2;
+        printif("%d, ", next_term);
+        t_1 = t_2;
+        t_2 = next_term;
     }
-
+    printif("\r\n");
+    printif("random words");
+    
 
     while (true) {
 
